@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
 <link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/marker.css">
+<link rel="stylesheet" href="css/mapK3.css">
 <link rel="stylesheet" href="css/navbar.css">
 </head>
 
@@ -14,64 +14,70 @@
 <script>
 document.addEventListener("DOMContentLoaded", () => {
     loadNavbar()
+    document.querySelectorAll(".marker").forEach(m => {
+        m.style.display="none"
+    })
 })
 </script>
 
 <main>
 
 <section class="title-bar">
-
-<h1 data-i18n="title">Important Information</h1>
-
+<h1 data-i18n="overview.title">Home</h1>
 </section>
 
 <section class="map-section">
 
+<div class="map-container">
+
 <div class="map-wrapper">
 
-<img src="images/Map_K3.png" id="map">
+<img src="images/mapK3_white.JPG" id="map">
 
-<div class="marker trash"></div>
-<div class="marker parking"></div>
-<div class="marker caretaker"></div>
+    <div class="marker trash"></div>
+    <div class="marker trash2"></div>
+    <div class="marker parking"></div>
+    <div class="marker caretaker"></div>
+    <div class="marker nag"></div>
+    <div class="marker bar"></div>
+    <div class="marker laundry"></div>
+    <div class="marker bike1"></div>
+    <div class="marker bike2"></div>
+    <div class="marker bike3"></div>
+    <div class="marker repair"></div>
+    <div class="marker grill"></div>
 
 </div>
 
-
 <div class="map-controls">
 
-<button onclick="showMarker('trash')">Müllsammelplatz</button>
-
-<button onclick="showMarker('parking')">Parkplatz</button>
-
-<button onclick="showMarker('caretaker')">Hausmeister</button>
-
-<button onclick="showMarker('nag')">NAG Raum</button>
-
-<button onclick="showMarker('bar')">Bar</button>
-
-<button onclick="showMarker('laundry')">Waschraum</button>
-
-<button onclick="showMarker('bike')">Fahrradstellplätze</button>
-
-<button onclick="showMarker('repair')">Fahrradreparatur</button>
-
-<button onclick="showMarker('grill')">Grillplatz</button>
+<button onclick="showMarker(['trash','trash2'], this)" data-i18n="overview.mapK3.trash"></button>
+<button onclick="showMarker(['parking'], this)" data-i18n="overview.mapK3.parking"></button>
+<button onclick="showMarker(['caretaker'], this)" data-i18n="overview.mapK3.caretaker"></button>
+<button onclick="showMarker(['nag'], this)" data-i18n="overview.mapK3.nag"></button>
+<button onclick="showMarker(['bar'], this)" data-i18n="overview.mapK3.bar"></button>
+<button onclick="showMarker(['laundry'], this)" data-i18n="overview.mapK3.laundry"></button>
+<button onclick="showMarker(['bike1','bike2','bike3'], this)" data-i18n="overview.mapK3.bike"></button>
+<button onclick="showMarker(['repair'], this)" data-i18n="overview.mapK3.repair"></button>
+<button onclick="showMarker(['grill'], this)" data-i18n="overview.mapK3.grill"></button>
+</div>
 
 </div>
 
 </section>
-
 
 <section class="content">
 
 <div class="info-grid">
 
 <div class="card">
-<h3>Hausmeister</h3>
-<p>Office: Haus 6</p>
-<p>Mo, Mi, Fr → 09:00–10:00</p>
-<p>Di, Do → 14:00–15:00</p>
+<h3 data-i18n="overview.caretaker.title">Caretaker K3</h3>
+<p data-i18n="overview.caretaker.names">Patrik Uhrig & Simon Fries</p>
+<p data-i18n="overview.caretaker.office">Office: House 6</p>
+<p data-i18n="overview.caretaker.hours1">Mo, Mi, Fr → 09:00–10:00</p>
+<p data-i18n="overview.caretaker.hours2">Di, Do → 14:00–15:00</p>
+<p data-i18n="overview.caretaker.phone">Phone: +49 6131 392 45 57</p>
+<a class="link-item" href="https://www.studierendenwerk-mainz.de/wohnen/einziehen/hausmeister-sprechzeiten" data-i18n="overview.caretaker.link">Official informations</a>
 </div>
 
 
@@ -102,20 +108,27 @@ document.addEventListener("DOMContentLoaded", () => {
 </main>
 
 <script>
-    function showMarker(type){
+function showMarker(types, btn){
+    // Alle Marker ausblenden
+    document.querySelectorAll(".marker").forEach(m => {
+        m.style.display = "none";
+    });
 
-document.querySelectorAll(".marker").forEach(m => {
-m.style.display="none"
-})
+    // Alle Buttons deaktivieren
+    document.querySelectorAll(".map-controls button").forEach(b => {
+        b.classList.remove("active");
+    });
 
-document.querySelectorAll(".map-controls button").forEach(b=>{
-b.classList.remove("active")
-})
+    // Marker anzeigen
+    if(!Array.isArray(types)) types = [types];
+    types.forEach(type => {
+        document.querySelectorAll(".marker."+type).forEach(m => {
+            m.style.display = "block";
+        });
+    });
 
-document.querySelector(".marker."+type).style.display="block"
-
-event.target.classList.add("active")
-
+    // Aktuellen Button aktiv markieren
+    if(btn) btn.classList.add("active");
 }
 </script>
 

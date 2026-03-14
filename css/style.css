@@ -5,10 +5,15 @@ background:#f8f8f8;
 color:#333;
 }
 
-.h3{
+main{
+margin-top:160px;
+}
+
+h3{
 margin-top:0;
 color:#154995;
 }
+
 /* TITLE BAR */
 
 .title-bar{
@@ -47,30 +52,36 @@ padding:40px;
 /* GRID */
 
 .info-grid{
-
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
-
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
 }
-
 
 
 /* CARDS */
 
 .card{
-
-background:white;
-
-border-radius:6px;
-
-padding:20px;
-
-box-shadow:0 2px 5px rgba(0,0,0,0.05);
-
+    background:white;
+    border-radius:6px;
+    padding:20px;
+    box-shadow:0 2px 5px rgba(0,0,0,0.05);
 }
 
 .card h3{
-margin-top:0;
-color:#154995;
+    text-align: center;
+    margin-top:0;
+    color:#154995;
+}
+
+/*Link*/
+.link-item{
+    text-align: center;
+    padding:20px;
+    text-decoration:none;
+    color:#154995;
+    transition:all 0.2s ease;
+}
+
+.link-item:hover{
+    color:#C7D92D;
 }

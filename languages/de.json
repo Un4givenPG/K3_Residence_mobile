@@ -8,18 +8,29 @@
     "info-content":"Diese Website wurde von der Hausverwaltung (HV) von K3 erstellt und ist kein offizieller Dienst des Studentenwerks Mainz."
   },
 
-  "home":{
-    "title": "Wichtige Informationen",
-    "mapK3":{
-      "trash":"Müllsammelplatz",
-      "parking":"Parkplätze"
+  "overview":{
+    "title": "Startseite",
+
+    "mapK3": {
+      "trash": "Mülltonnen",
+      "parking": "Parkplätze",
+      "caretaker": "Büro Hausmeister",
+      "nag": "Raum der Netzwerk AG",
+      "bar": "K3 Bar",
+      "laundry": "Waschraum",
+      "bike": "Fahrradstellplätze",
+      "repair": "Reperaturstation für Fahrräder",
+      "grill": "Grillplatz"
     },
 
     "caretaker": {
-      "title": "Hausmeister",
+      "title": "Hausmeister K3",
+      "names": "Patrik Uhrig & Simon Fries",
       "office": "Büro: Haus 6",
       "hours1": "Mo, Mi, Fr → 09:00–10:00",
-      "hours2": "Di, Do → 14:00–15:00"
+      "hours2": "Di, Do → 14:00–15:00",
+      "phone": "Tel.: +49 6131 392 45 57",
+      "link": "Offizielle Informationen"
     },
 
     "repairs": {

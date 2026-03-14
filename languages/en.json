@@ -8,27 +8,45 @@
     "info-content":"This website was created by the dorm commitee (HV) of K3 and is not an official service of Studierendenwerk Mainz."
   },
 
-  "title": "Important Information",
+  "overview": {
+    "title": "Home",
 
-  "caretaker": {
-    "title": "Caretaker",
-    "office": "Office: House 6",
-    "hours1": "Mon, Wed, Fri → 09:00–10:00",
-    "hours2": "Tue, Thu → 14:00–15:00"
-  },
+    "mapK3": {
+      "trash": "Trash and Recycling",
+      "parking": "Parking Spaces",
+      "caretaker": "Caretaker Office",
+      "nag": "Network AG Room",
+      "bar": "K3 Bar",
+      "laundry": "Laundry room",
+      "bike": "Bike Storage",
+      "repair": "Bike Repairstation",
+      "grill": "Barbecue Area"
+    },
 
-  "repairs": {
-    "title": "Repairs",
-    "text": "Report problems through the tenant portal."
-  },
+    "caretaker": {
+      "title": "Caretaker K3",
+      "names": "Patrik Uhrig & Simon Fries",
+      "office": "Office: House 6",
+      "hours1": "Mon, Wed, Fri → 09:00–10:00",
+      "hours2": "Tue, Thu → 14:00–15:00",
+      "phone": "Phone: +49 6131 392 45 57",
+      "link": "Official informations"
+    },
 
-  "laundry": {
-    "title": "Laundry",
-    "text": "Laundry room in House 4."
-  },
+    "repairs": {
+      "title": "Repairs",
+      "text": "Report problems through the tenant portal."
+    },
 
-  "parking": {
-    "title": "Parking",
-    "text": "Resident parking on Lucy-Hillebrand-Straße."
+    "laundry": {
+      "title": "Laundry",
+      "text": "Laundry room in House 4."
+    },
+
+    "parking": {
+      "title": "Parking",
+      "text": "Resident parking on Lucy-Hillebrand-Straße."
+    }
   }
+
 }
