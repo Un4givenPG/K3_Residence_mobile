@@ -1,316 +1,124 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>K3 Residence Links</title>
-
-<style>
-
-body{
-font-family: Arial, Helvetica, sans-serif;
-margin:0;
-background:#ffffff;
-color:#333;
-}
-
-header{
-background:#f2f2f2;
-padding:20px 40px;
-border-bottom:1px solid #ddd;
-display:flex;
-justify-content:space-between;
-align-items:center;
-}
-
-h1{
-font-size:24px;
-margin:0;
-}
-
-.container{
-max-width:800px;
-margin:auto;
-padding:30px;
-}
-
-.section{
-margin-top:35px;
-}
-
-.section h2{
-color:#003b6f;
-margin-bottom:10px;
-display:flex;
-align-items:center;
-gap:8px;
-}
-
-.link-item{
-display:block;
-padding:14px 16px;
-margin:8px 0;
-border:1px solid #ddd;
-border-radius:6px;
-text-decoration:none;
-color:#003b6f;
-transition:all 0.2s ease;
-}
-
-.link-item:hover{
-background:#f5f7fa;
-border-color:#003b6f;
-}
-
-.lang-btn{
-cursor:pointer;
-border:none;
-background:#003b6f;
-color:white;
-padding:6px 10px;
-border-radius:5px;
-}
-
-.info-btn{
-cursor:pointer;
-font-weight:bold;
-color:#003b6f;
-}
-
-details{
-margin-top:10px;
-border:1px solid #ddd;
-border-radius:6px;
-padding:10px;
-}
-
-summary{
-font-weight:bold;
-cursor:pointer;
-color:#003b6f;
-}
-
-.popup{
-display:none;
-position:fixed;
-top:0;
-left:0;
-width:100%;
-height:100%;
-background:rgba(0,0,0,0.4);
-justify-content:center;
-align-items:center;
-}
-
-.popup-content{
-background:white;
-padding:25px;
-border-radius:8px;
-max-width:400px;
-text-align:center;
-}
-
-.close{
-margin-top:15px;
-cursor:pointer;
-background:#003b6f;
-color:white;
-border:none;
-padding:6px 12px;
-border-radius:5px;
-}
-
-footer{
-margin-top:50px;
-font-size:14px;
-color:#666;
-}
-
-</style>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/marker.css">
+<link rel="stylesheet" href="css/navbar.css">
 </head>
 
 <body>
 
-<header>
-<h1 data-de="Links zum Wohnheim K3" data-en="K3 Residence Links">K3 Residence Links</h1>
-<button class="lang-btn" onclick="toggleLanguage()">DE / EN</button>
-</header>
+<div id="navbar-container"></div>
 
-<div class="container">
+<script src="javaScript/lan.js"></script>
+<script src="javaScript/loadNavbar.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    loadNavbar()
+})
+</script>
 
-<!-- SOCIAL -->
+<main>
 
-<div class="section">
+<section class="title-bar">
 
-<h2>
-<span data-de="Social Media Links" data-en="Social Media Links">Social Media Links</span>
-<span class="info-btn" onclick="openPopup()">ℹ</span>
-</h2>
+<h1 data-i18n="title">Important Information</h1>
 
-<a class="link-item" href="https://chat.whatsapp.com/HcE9zHeNOIZKaWCHfOEW6T">
-WhatsApp Community
-</a>
+</section>
 
-<a class="link-item" href="https://www.instagram.com/k3_bar_mz?igsh=NmExdWVmcDhpd3A2">
-K3 Bar Instagram
-</a>
+<section class="map-section">
 
-</div>
+<div class="map-wrapper">
 
+<img src="images/Map_K3.png" id="map">
 
-<!-- NAG -->
-
-<div class="section">
-
-<h2>
-    <span data-de="Netzwerk AG (NAG)" data-en="Netzwerk AG (NAG)">Netzwerk AG (NAG)</span>
-    <span class="info-btn" onclick="openPopupNAG()">ℹ</span>
-</h2>
-
-<a class="link-item" href="https://nag.ran.com.pl">
-NAG K3 Website
-</a>
+<div class="marker trash"></div>
+<div class="marker parking"></div>
+<div class="marker caretaker"></div>
 
 </div>
 
 
-<!-- STUDIERENDENWERK -->
+<div class="map-controls">
 
-<div class="section">
+<button onclick="showMarker('trash')">Müllsammelplatz</button>
 
-<h2>Studierendenwerk</h2>
+<button onclick="showMarker('parking')">Parkplatz</button>
 
-<a class="link-item" href="https://www.studierendenwerk-mainz.de/wohnen" data-de="Überblick Wohnen" data-en="Housing Overview">
-Housing Overview
-</a>
+<button onclick="showMarker('caretaker')">Hausmeister</button>
 
-<a class="link-item" href="https://www.studierendenwerk-mainz.de/wohnen/wohnheime/k3" data-de="Wohnheim K3" data-en="Residence K3">
-Residence K3
-</a>
+<button onclick="showMarker('nag')">NAG Raum</button>
 
-<a class="link-item" href="https://www.studierendenwerk-mainz.de/wohnen/kontakt" data-de="Kontakt Team Wohnen" data-en="Housing Contact">
-Housing Contact
-</a>
+<button onclick="showMarker('bar')">Bar</button>
 
-<a class="link-item" href="https://tl1.eu/SWMZ/#maintenance" data-de="Mieterportal" data-en="Tenant Portal">
-Tenant Portal
-</a>
+<button onclick="showMarker('laundry')">Waschraum</button>
 
-<a class="link-item" href="https://www.studierendenwerk-mainz.de/wohnen/notdienst" data-de="Notdienst" data-en="Emergency Service">
-Emergency Service
-</a>
+<button onclick="showMarker('bike')">Fahrradstellplätze</button>
 
-<a class="link-item" href="https://www.studierendenwerk-mainz.de/wohnen/einziehen/hausmeister-sprechzeiten" data-de="Hausmeister Information" data-en="Caretakers Informations">
-Caretakers Informations
-</a>
+<button onclick="showMarker('repair')">Fahrradreparatur</button>
 
-<a class="link-item" href="https://www.studierendenwerk-mainz.de/fileadmin/PDF_Downloads_ALLE/Wohnen_Wohnheimbroschuere_2023_07.pdf" data-de="Wohnheimbroschüre" data-en="Housing Brochure (PDF)">
-Housing Brochure (PDF)
-</a>
+<button onclick="showMarker('grill')">Grillplatz</button>
 
 </div>
 
+</section>
 
-<!-- SHOPS -->
 
-<div class="section">
+<section class="content">
 
-<h2 data-de="Geschäfte in der Nähe" data-en="Nearby Shops">Nearby Shops</h2>
+<div class="info-grid">
 
-<details>
-<summary data-de="Lebensmittel" data-en="Groceries">Groceries</summary>
-
-<a class="link-item" href="https://maps.app.goo.gl/ntU4sbNSgzqDGLgY9">Rewe</a>
-<a class="link-item" href="https://maps.app.goo.gl/4GW1Nb7KvPjhub4S8">Kaufland</a>
-<a class="link-item" href="https://maps.app.goo.gl/BMJULPtabRRKrw1u5">Aldi</a>
-<a class="link-item" href="https://maps.app.goo.gl/JeB9m2sFwfDjzw4Y9">Lidl</a>
-
-</details>
-
-<details>
-<summary data-de="Drogerie" data-en="Drugstore">Drugstore</summary>
-
-<a class="link-item" href="https://maps.app.goo.gl/Vq3vQME3mYdN821H9">Müller</a>
-<a class="link-item" href="https://maps.app.goo.gl/HVDbV9bvBaMuUfPJ9">DM</a>
-
-</details>
-
-<details>
-<summary data-de="Apotheke" data-en="Pharmacy">Pharmacy</summary>
-
-<a class="link-item" href="https://maps.app.goo.gl/gMguMHt1U1276bnaA">Sonnen-Apotheke OHG</a>
-
-</details>
-
-</div>
-
-<footer data-de="Hausverwaltung (HV) K3 · Lucy-Hillebrand-Straße 4–18 · Mainz" data-en="Dorm Commitee (HV) K3 · Lucy-Hillebrand-Straße 4–18 · Mainz">
-Dorm Commitee (HV) K3 · Lucy-Hillebrand-Straße 4–18 · Mainz
-</footer>
-
+<div class="card">
+<h3>Hausmeister</h3>
+<p>Office: Haus 6</p>
+<p>Mo, Mi, Fr → 09:00–10:00</p>
+<p>Di, Do → 14:00–15:00</p>
 </div>
 
 
-<!-- POPUP -->
-
-<div id="popup" class="popup">
-<div class="popup-content">
-
-<p data-de="WhatsApp und Instagram werden von der Hausvertretung (HV) organisiert und sind unabhängig vom Studierendenwerk Mainz."
-data-en="WhatsApp and Instagram are organized by the resident committee (HV) and are independent from Studierendenwerk Mainz.">
-WhatsApp and Instagram are organized by the resident committee (HV) and are independent from Studierendenwerk Mainz.
-</p>
-
-<button class="close" onclick="closePopup()">OK</button>
-
-</div>
+<div class="card">
+<h3>Reparaturen</h3>
+<p>Melde Probleme über das Mieterportal.</p>
+<p>Notdienst: +49 6131 392 4568</p>
 </div>
 
-<div id="popup-nag" class="popup">
-<div class="popup-content">
 
-<p data-de="Bewohner, die ehrenamtlich anderen bei der Einrichtung des Internets und kleineren Verbindungsproblemen helfen."
-data-en="Residents who help others with internet setup and minor connection issues.">
-Residents who help others with internet setup and minor connection issues.
-</p>
-
-<button class="close" onclick="closePopupNAG()">OK</button>
-
-</div>
+<div class="card">
+<h3>Waschraum</h3>
+<p>Waschraum in Haus 4.</p>
+<p>Bezahlung über Studierendenwerk App.</p>
 </div>
 
+
+<div class="card">
+<h3>Parken</h3>
+<p>Parkplätze in der Lucy-Hillebrand-Straße.</p>
+</div>
+
+
+</div>
+
+</section>
+
+</main>
 
 <script>
+    function showMarker(type){
 
-let currentLang = "en";
+document.querySelectorAll(".marker").forEach(m => {
+m.style.display="none"
+})
 
-function toggleLanguage(){
+document.querySelectorAll(".map-controls button").forEach(b=>{
+b.classList.remove("active")
+})
 
-currentLang = currentLang === "en" ? "de" : "en";
+document.querySelector(".marker."+type).style.display="block"
 
-document.querySelectorAll("[data-de]").forEach(el=>{
-el.textContent = el.getAttribute("data-"+currentLang);
-});
+event.target.classList.add("active")
 
 }
-
-function openPopup(){
-document.getElementById("popup").style.display="flex";
-}
-
-function closePopup(){
-document.getElementById("popup").style.display="none";
-}
-
-function openPopupNAG(){
-document.getElementById("popup-nag").style.display="flex";
-}
-
-function closePopupNAG(){
-document.getElementById("popup-nag").style.display="none";
-}
-
 </script>
 
 </body>
 </html>
+
