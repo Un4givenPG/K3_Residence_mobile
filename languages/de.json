@@ -34,8 +34,13 @@
     },
 
     "repairs": {
-      "title": "Reparaturen",
-      "text": "Melde Probleme über das Mieterportal."
+      "title": "Reparaturen & Instandhaltung",
+      "text": "Alle Probleme müssen über das Mieterportal gemeldet. Dort wird auch der Fortschritt der Reparaturen angezeigt.",
+      "text2": "Wenn ein Türschloss orange blinkt, ist die Batterie fast leer. Bitte direkt melden.",
+      "emergency_service": "Notdienst: +49 6131 392 4568",
+      "esp1": "Bei dringenden Problemen außerhalb der Hausmeisterzeiten",
+      "esp2": "Kostenlos bei technischen Störungen",
+      "esp3": "Es fallen Kosten an, wenn die Aussperrung selbstverursacht wurde (z. B. verlorener Schlüssel)"
     },
 
     "laundry": {

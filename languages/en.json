@@ -34,8 +34,13 @@
     },
 
     "repairs": {
-      "title": "Repairs",
-      "text": "Report problems through the tenant portal."
+      "title": "Repairs & Maintenance",
+      "text": "Report any issues through the Tenant Portal, where you can also track repair progress.",
+      "text2": "If your door lock flashes orange, the battery is running low — please report it.",
+      "emergency_service": "Emergency service: +49 6131 392 4568 ",
+      "esp1": "For urgent problems outside caretaker hours",
+      "esp2": "No charge if it’s a technical fault",
+      "esp3": "Costs apply if the lockout was caused by the resident (e.g., lost key)"
     },
 
     "laundry": {
