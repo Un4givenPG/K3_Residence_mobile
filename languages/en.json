@@ -1,7 +1,7 @@
 {
   "nav": {
     "home": "Home",
-    "links": "Important Links",
+    "links": "Links",
     "community": "Community",
     "map": "Map",
     "info-title":"Information",
@@ -84,7 +84,38 @@
 
 
   "links": {
-    "title": "Important Links"
+    "title": "Important Links",
+
+    "social": {
+      "title": "Social Media",
+      "whatsapp": "WhatsApp Community",
+      "instagram": "K3 Bar Instagram",
+      "info": "WhatsApp and Instagram are organized by the resident committee (HV) and are independent from Studierendenwerk Mainz."
+    },
+
+    "nag": {
+      "title": "Netzwerk AG (NAG)",
+      "website": "NAG Website",
+      "info": "Residents who help others with internet setup and minor connection issues."
+    },
+
+    "sw": {
+      "title": "Studierendenwerk",
+      "overview": "Housing Overview",
+      "k3": "Residence K3",
+      "contact": "Housing Contact",
+      "portal": "Tenant Portal",
+      "emergency": "Emergency Service",
+      "caretaker": "Caretakers Information",
+      "brochure": "Housing Brochure (PDF)"
+    },
+
+    "shops": {
+      "title": "Nearby Shops",
+      "groceries": "Groceries",
+      "drugstore": "Drugstore",
+      "pharmacy": "Pharmacy"
+    }
   },
 
 

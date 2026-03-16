@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
+<html>
+
 <head>
 <link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/mapK3.css">
 <link rel="stylesheet" href="css/navbar.css">
 <link rel="stylesheet" href="css/links.css">
 </head>
@@ -13,42 +13,42 @@
 
 <script src="javaScript/lan.js"></script>
 <script src="javaScript/loadNavbar.js"></script>
+
 <script>
-    document.addEventListener("DOMContentLoaded", () => {
-        loadNavbar()
-    })
+document.addEventListener("DOMContentLoaded", () => {
+    loadNavbar()
+})
 </script>
 
-
-<body>
 <main>
-    <section class="title-bar">
-        <h1 data-i18n="links.title">Important Links</h1>
-    </section>
-</main>
 
-    
-<header>
-<h1 data-de="Links zum Wohnheim K3" data-en="K3 Residence Links">K3 Residence Links</h1>
-<button class="lang-btn" onclick="toggleLanguage()">DE / EN</button>
-</header>
+<section class="title-bar">
+<h1 data-i18n="links.title">Important Links</h1>
+</section>
+
+<section class="content">
 
 <div class="container">
+
 
 <!-- SOCIAL -->
 
 <div class="section">
 
 <h2>
-<span data-de="Social Media Links" data-en="Social Media Links">Social Media Links</span>
-<span class="info-btn" onclick="openPopup()">ℹ</span>
+<span data-i18n="links.social.title">Social Media</span>
+<button class="info-btn" onclick="openPopup()">ⓘ</button>
 </h2>
 
-<a class="link-item" href="https://chat.whatsapp.com/HcE9zHeNOIZKaWCHfOEW6T">
+<a class="link-item"
+href="https://chat.whatsapp.com/HcE9zHeNOIZKaWCHfOEW6T"
+data-i18n="links.social.whatsapp">
 WhatsApp Community
 </a>
 
-<a class="link-item" href="https://www.instagram.com/k3_bar_mz?igsh=NmExdWVmcDhpd3A2">
+<a class="link-item"
+href="https://www.instagram.com/k3_bar_mz?igsh=NmExdWVmcDhpd3A2"
+data-i18n="links.social.instagram">
 K3 Bar Instagram
 </a>
 
@@ -60,12 +60,14 @@ K3 Bar Instagram
 <div class="section">
 
 <h2>
-    <span data-de="Netzwerk AG (NAG)" data-en="Netzwerk AG (NAG)">Netzwerk AG (NAG)</span>
-    <span class="info-btn" onclick="openPopupNAG()">ℹ</span>
+<span data-i18n="links.nag.title">Netzwerk AG (NAG)</span>
+<button class="info-btn" onclick="openPopupNAG()">ⓘ</button>
 </h2>
 
-<a class="link-item" href="https://nag.ran.com.pl">
-NAG K3 Website
+<a class="link-item"
+href="https://nag.ran.com.pl"
+data-i18n="links.nag.website">
+NAG Website
 </a>
 
 </div>
@@ -75,33 +77,47 @@ NAG K3 Website
 
 <div class="section">
 
-<h2>Studierendenwerk</h2>
+<h2 data-i18n="links.sw.title">Studierendenwerk</h2>
 
-<a class="link-item" href="https://www.studierendenwerk-mainz.de/wohnen" data-de="Überblick Wohnen" data-en="Housing Overview">
+<a class="link-item"
+href="https://www.studierendenwerk-mainz.de/wohnen"
+data-i18n="links.sw.overview">
 Housing Overview
 </a>
 
-<a class="link-item" href="https://www.studierendenwerk-mainz.de/wohnen/wohnheime/k3" data-de="Wohnheim K3" data-en="Residence K3">
+<a class="link-item"
+href="https://www.studierendenwerk-mainz.de/wohnen/wohnheime/k3"
+data-i18n="links.sw.k3">
 Residence K3
 </a>
 
-<a class="link-item" href="https://www.studierendenwerk-mainz.de/wohnen/kontakt" data-de="Kontakt Team Wohnen" data-en="Housing Contact">
+<a class="link-item"
+href="https://www.studierendenwerk-mainz.de/wohnen/kontakt"
+data-i18n="links.sw.contact">
 Housing Contact
 </a>
 
-<a class="link-item" href="https://tl1.eu/SWMZ/#maintenance" data-de="Mieterportal" data-en="Tenant Portal">
+<a class="link-item"
+href="https://tl1.eu/SWMZ/#maintenance"
+data-i18n="links.sw.portal">
 Tenant Portal
 </a>
 
-<a class="link-item" href="https://www.studierendenwerk-mainz.de/wohnen/notdienst" data-de="Notdienst" data-en="Emergency Service">
+<a class="link-item"
+href="https://www.studierendenwerk-mainz.de/wohnen/notdienst"
+data-i18n="links.sw.emergency">
 Emergency Service
 </a>
 
-<a class="link-item" href="https://www.studierendenwerk-mainz.de/wohnen/einziehen/hausmeister-sprechzeiten" data-de="Hausmeister Information" data-en="Caretakers Informations">
-Caretakers Informations
+<a class="link-item"
+href="https://www.studierendenwerk-mainz.de/wohnen/einziehen/hausmeister-sprechzeiten"
+data-i18n="links.sw.caretaker">
+Caretakers Information
 </a>
 
-<a class="link-item" href="https://www.studierendenwerk-mainz.de/fileadmin/PDF_Downloads_ALLE/Wohnen_Wohnheimbroschuere_2023_07.pdf" data-de="Wohnheimbroschüre" data-en="Housing Brochure (PDF)">
+<a class="link-item"
+href="https://www.studierendenwerk-mainz.de/fileadmin/PDF_Downloads_ALLE/Wohnen_Wohnheimbroschuere_2023_07.pdf"
+data-i18n="links.sw.brochure">
 Housing Brochure (PDF)
 </a>
 
@@ -112,10 +128,11 @@ Housing Brochure (PDF)
 
 <div class="section">
 
-<h2 data-de="Geschäfte in der Nähe" data-en="Nearby Shops">Nearby Shops</h2>
+<h2 data-i18n="links.shops.title">Nearby Shops</h2>
 
 <details>
-<summary data-de="Lebensmittel" data-en="Groceries">Groceries</summary>
+
+<summary data-i18n="links.shops.groceries">Groceries</summary>
 
 <a class="link-item" href="https://maps.app.goo.gl/ntU4sbNSgzqDGLgY9">Rewe</a>
 <a class="link-item" href="https://maps.app.goo.gl/4GW1Nb7KvPjhub4S8">Kaufland</a>
@@ -125,7 +142,8 @@ Housing Brochure (PDF)
 </details>
 
 <details>
-<summary data-de="Drogerie" data-en="Drugstore">Drugstore</summary>
+
+<summary data-i18n="links.shops.drugstore">Drugstore</summary>
 
 <a class="link-item" href="https://maps.app.goo.gl/Vq3vQME3mYdN821H9">Müller</a>
 <a class="link-item" href="https://maps.app.goo.gl/HVDbV9bvBaMuUfPJ9">DM</a>
@@ -133,45 +151,41 @@ Housing Brochure (PDF)
 </details>
 
 <details>
-<summary data-de="Apotheke" data-en="Pharmacy">Pharmacy</summary>
 
-<a class="link-item" href="https://maps.app.goo.gl/gMguMHt1U1276bnaA">Sonnen-Apotheke OHG</a>
+<summary data-i18n="links.shops.pharmacy">Pharmacy</summary>
+
+<a class="link-item" href="https://maps.app.goo.gl/gMguMHt1U1276bnaA">Sonnen-Apotheke</a>
 
 </details>
 
 </div>
 
-<footer data-de="Hausverwaltung (HV) K3 · Lucy-Hillebrand-Straße 4–18 · Mainz" data-en="Dorm Commitee (HV) K3 · Lucy-Hillebrand-Straße 4–18 · Mainz">
-Dorm Commitee (HV) K3 · Lucy-Hillebrand-Straße 4–18 · Mainz
-</footer>
 
 </div>
 
+</section>
 
-<!-- POPUP -->
+</main>
 
-<div id="popup" class="popup">
-<div class="popup-content">
 
-<p data-de="WhatsApp und Instagram werden von der Hausvertretung (HV) organisiert und sind unabhängig vom Studierendenwerk Mainz."
-data-en="WhatsApp and Instagram are organized by the resident committee (HV) and are independent from Studierendenwerk Mainz.">
-WhatsApp and Instagram are organized by the resident committee (HV) and are independent from Studierendenwerk Mainz.
-</p>
+<!-- POPUPS -->
 
-<button class="close" onclick="closePopup()">OK</button>
+<div id="popup" class="info-popup">
+<div class="info-content">
+
+<p data-i18n="links.social.info"></p>
+
+<button class="close-button" onclick="closePopup()">OK</button>
 
 </div>
 </div>
 
-<div id="popup-nag" class="popup">
-<div class="popup-content">
+<div id="popup-nag" class="info-popup">
+<div class="info-content">
 
-<p data-de="Bewohner, die ehrenamtlich anderen bei der Einrichtung des Internets und kleineren Verbindungsproblemen helfen."
-data-en="Residents who help others with internet setup and minor connection issues.">
-Residents who help others with internet setup and minor connection issues.
-</p>
+<p data-i18n="links.nag.info"></p>
 
-<button class="close" onclick="closePopupNAG()">OK</button>
+<button class="close-button" onclick="closePopupNAG()">OK</button>
 
 </div>
 </div>
@@ -179,32 +193,20 @@ Residents who help others with internet setup and minor connection issues.
 
 <script>
 
-let currentLang = "en";
-
-function toggleLanguage(){
-
-currentLang = currentLang === "en" ? "de" : "en";
-
-document.querySelectorAll("[data-de]").forEach(el=>{
-el.textContent = el.getAttribute("data-"+currentLang);
-});
-
-}
-
 function openPopup(){
-document.getElementById("popup").style.display="flex";
+document.getElementById("popup").style.display="flex"
 }
 
 function closePopup(){
-document.getElementById("popup").style.display="none";
+document.getElementById("popup").style.display="none"
 }
 
 function openPopupNAG(){
-document.getElementById("popup-nag").style.display="flex";
+document.getElementById("popup-nag").style.display="flex"
 }
 
 function closePopupNAG(){
-document.getElementById("popup-nag").style.display="none";
+document.getElementById("popup-nag").style.display="none"
 }
 
 </script>
