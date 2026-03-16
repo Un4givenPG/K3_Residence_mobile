@@ -1,0 +1,50 @@
+.map-layout{
+display:flex;
+height:600px;
+}
+
+.map-sidebar{
+width:260px;
+overflow-y:auto;
+background:#f8f8f8;
+padding:15px;
+border-right:1px solid #ddd;
+}
+
+.map-sidebar ul{
+list-style:none;
+padding:0;
+}
+
+.map-sidebar li{
+cursor:pointer;
+padding:6px;
+border-radius:4px;
+}
+
+.map-sidebar li:hover{
+background:#C7D92D;
+}
+
+#map{
+flex:1;
+}
+
+/* Mobile */
+
+@media(max-width:800px){
+
+.map-layout{
+flex-direction:column;
+height:auto;
+}
+
+.map-sidebar{
+width:100%;
+}
+
+#map{
+height:400px;
+}
+
+}
