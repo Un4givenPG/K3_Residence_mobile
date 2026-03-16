@@ -36,21 +36,44 @@
     "repairs": {
       "title": "Repairs & Maintenance",
       "text": "Report any issues through the Tenant Portal, where you can also track repair progress.",
-      "text2": "If your door lock flashes orange, the battery is running low — please report it.",
+      "text2": "If your door lock flashes orange, the battery is running low. Please report it.",
       "emergency_service": "Emergency service: +49 6131 392 4568 ",
       "esp1": "For urgent problems outside caretaker hours",
       "esp2": "No charge if it’s a technical fault",
-      "esp3": "Costs apply if the lockout was caused by the resident (e.g., lost key)"
+      "esp3": "Costs apply if the lockout was caused by the resident (e.g., lost key)",
+      "link": "Tenant Portal"
     },
 
-    "laundry": {
-      "title": "Laundry",
-      "text": "Laundry room in House 4."
+    "service": {
+      "title": "Laundry & Waste",
+      "laundry": "The laundry room is in House 4 (payment via the Studierendenwerk app).",
+      "trash": "Trash and recycling areas are located near House 4 and House 18.",
+      "bike": "There is a locked bike storage area where you can safely park your bicycle.",
+      "link": "Housing Brochure (PDF)"
     },
 
     "parking": {
       "title": "Parking",
-      "text": "Resident parking on Lucy-Hillebrand-Straße."
+      "text": "Resident parking is available on Lucy-Hillebrand-Straße.",
+      "text2": "If no spaces are available, you can use parking on the university Mainz garage."
+    },
+
+    "HV": {
+      "title": "Volunteering & Community",
+      "HV": "HV (Dorm Committe):",
+      "esp1": "Organizes events, runs the K3 Bar, and represents residents.",
+      "esp2": "Elections take place each semester during the General Assembly. Every K3 resident can can run for election.",
+      "esp3": "Feel free to join, bring ideas or raise concerns in the weekly HV Meetings.",
+      "text": "You can get involved by joining the Bar Team, helping in working groups, or starting your own project.",
+      "bar": "Bar Nights: Fridays at 21:00"
+    },
+
+    "NAG": {
+      "title": "NAG (Network Group)",
+      "text": "Residents who help others with internet setup and minor connection issues.",
+      "text2": "You can join as a volunteer too.",
+      "office": "Office: House 6",
+      "mail": "E-Mail: nag-k3@uni-mainz.de"
     }
   },
 

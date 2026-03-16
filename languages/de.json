@@ -40,17 +40,40 @@
       "emergency_service": "Notdienst: +49 6131 392 4568",
       "esp1": "Bei dringenden Problemen außerhalb der Hausmeisterzeiten",
       "esp2": "Kostenlos bei technischen Störungen",
-      "esp3": "Es fallen Kosten an, wenn die Aussperrung selbstverursacht wurde (z. B. verlorener Schlüssel)"
+      "esp3": "Es fallen Kosten an, wenn die Aussperrung selbstverursacht wurde (z. B. verlorener Schlüssel)",
+      "link": "Mieterportal"
     },
 
-    "laundry": {
-      "title": "Waschraum",
-      "text": "Waschraum in Haus 4."
+    "service": {
+      "title": "Wäsche & Müll",
+      "laundry": "Der Waschraum befindet sich in Haus 4 (Bezahlung über die Studierendenwerk-App).",
+      "trash": "Die Müll- und Recyclingstellen befinden sich in der Nähe von Haus 4 und Haus 18.",
+      "bike": "Es gibt Fahrradkäfige, wo Sie Ihr Fahrrad sicher abstellen können.",
+      "link": "Wohnheimbroschüre (PDF)"
     },
 
     "parking": {
       "title": "Parken",
-      "text": "Parkplätze in der Lucy-Hillebrand-Straße."
+      "text": "In der Lucy-Hillebrand-Straße stehen Anwohnerparkplätze zur Verfügung.",
+      "text2": "Sollten keine Parkplätze frei sein, kann man das Parkhaus der Hochschule Mainz nutzen."
+    },
+
+    "HV": {
+      "title": "Ehrenamt & Gemeinschaft",
+      "HV": "HV (Wohnheimausschuss):",
+      "esp1": "Organisiert Veranstaltungen, betreibt die K3-Bar und vertritt die Bewohner.",
+      "esp2": "Wahlen finden jedes Semester während der Generalversammlung statt. Jeder K3-Bewohner kann sich zur Wahl stellen.",
+      "esp3": "Du kannst gerne mitmachen, Ideen einbringen oder Anliegen in den wöchentlichen HV-Treffen ansprechen.",
+      "text": "Du kannst dich engagieren, indem du dem Bar-Team beitrittst, in Arbeitsgruppen mitwirkst oder dein eigenes Projekt startest.",
+      "bar": "Bar-Abende: freitags um 21:00 Uhr"
+    },
+
+    "NAG": {
+      "title": "NAG (Netzwerkgruppe)",
+      "text": "Bewohner, die anderen bei der Einrichtung des Internets und bei kleineren Verbindungsproblemen helfen.",
+      "text2": "Auch du kannst als Freiwilliger mitmachen.",
+      "office": "Büro: Haus 6",
+      "mail": "E-Mail: nag-k3@uni-mainz.de"
     }
   },
 
