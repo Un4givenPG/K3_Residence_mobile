@@ -5,6 +5,7 @@ padding:40px;
 
 display:flex;
 gap:20px;
+align-items:stretch; /* WICHTIG */
 }
 
 /* SIDEBAR */
@@ -17,7 +18,7 @@ border-radius:6px;
 padding:15px;
 
 overflow-y:auto;
-max-height:600px;
+max-height:570px;
 }
 
 /* CATEGORY */
@@ -72,6 +73,7 @@ transform:translateX(3px);
 #map{
 flex:1;
 height:600px;
+min-height: 600px;
 
 border-radius:6px;
 border:1px solid #ddd;
@@ -91,6 +93,22 @@ padding:20px;
 width:100%;
 max-height:none;
 }
+
+/* CATEGORY COLORS */
+
+.category.transport h4 { color:#fb8c00; }
+.category.service h4 { color:#C7D92D; }
+.category.groceries h4 { color:#43a047; }
+.category.drugstore h4 { color:#8e24aa; }
+.category.pharmacy h4 { color:#1e88e5; }
+
+/* BUTTON COLOR LEFT BORDER */
+
+.category.transport li { border-left:4px solid #fb8c00; }
+.category.service li { border-left:4px solid #C7D92D; }
+.category.groceries li { border-left:4px solid #43a047; }
+.category.drugstore li { border-left:4px solid #8e24aa; }
+.category.pharmacy li { border-left:4px solid #1e88e5; }
 
 #map{
 height:420px;

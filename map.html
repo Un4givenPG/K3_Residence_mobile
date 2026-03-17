@@ -30,48 +30,53 @@
 
 <div class="map-sidebar">
 
-<h3 data-i18n="map.places">Places</h3>
+    <h2 data-i18n="map.places">Places</h2>
+    <ul>
+        <li onclick="focusMarker('k3')">K3</li>
+    </ul>
 
-<div class="category">
-<h4 data-i18n="map.groceries">Groceries</h4>
-<ul>
-<li onclick="focusMarker('rewe')" data-i18n="map.rewe">Rewe</li>
-<li onclick="focusMarker('kaufland')" data-i18n="map.kaufland">Kaufland</li>
-<li onclick="focusMarker('aldi')" data-i18n="map.aldi">Aldi</li>
-<li onclick="focusMarker('lidl')" data-i18n="map.lidl">Lidl</li>
-</ul>
-</div>
+    <div class="category transport">
+        <h4 data-i18n="map.transport">Transport</h4>
+        <ul>
+            <li onclick="focusMarker('arena')" data-i18n="map.arena">Arena</li>
+            <li onclick="focusMarker('campusbruecke')" data-i18n="map.campusbruecke">Campusbrücke</li>
+            <li onclick="focusMarker('hsmainz')" data-i18n="map.hsmainz">Hochschule Mainz</li>
+            <li onclick="focusMarker('kisselberg')" data-i18n="map.kisselberg">Kisselberg</li>
+        </ul>
+    </div>
 
-<div class="category">
-<h4 data-i18n="map.drugstore">Drugstore</h4>
-<ul>
-<li onclick="focusMarker('mueller')" data-i18n="map.mueller">Müller</li>
-<li onclick="focusMarker('dm')" data-i18n="map.dm">DM</li>
-</ul>
-</div>
+    <div class="category service">
+        <h4 data-i18n="map.service">Service</h4>
+        <ul>
+            <li onclick="focusMarker('sw')" data-i18n="map.sw">Studierendenwerk</li>
+        </ul>
+    </div>
 
-<div class="category">
-<h4 data-i18n="map.pharmacy">Pharmacy</h4>
-<ul>
-<li onclick="focusMarker('apo')" data-i18n="map.apo">Sonnen Apotheke</li>
-</ul>
-</div>
+    <div class="category groceries">
+        <h4 data-i18n="map.groceries">Groceries</h4>
+        <ul>
 
-<div class="category">
-<h4 data-i18n="map.transport">Transport</h4>
-<ul>
-<li onclick="focusMarker('arena')" data-i18n="map.arena">Arena</li>
-<li onclick="focusMarker('campusbruecke')" data-i18n="map.campusbruecke">Campusbrücke</li>
-<li onclick="focusMarker('kisselberg')" data-i18n="map.kisselberg">Kisselberg</li>
-</ul>
-</div>
+            <li onclick="focusMarker('aldi')" data-i18n="map.aldi">Aldi</li>
+            <li onclick="focusMarker('kaufland')" data-i18n="map.kaufland">Kaufland</li>
+            <li onclick="focusMarker('lidl')" data-i18n="map.lidl">Lidl</li>
+            <li onclick="focusMarker('rewe')" data-i18n="map.rewe">Rewe</li>
+        </ul>
+    </div>
 
-<div class="category">
-<h4 data-i18n="map.service">Service</h4>
-<ul>
-<li onclick="focusMarker('sw')" data-i18n="map.sw">Studierendenwerk</li>
-</ul>
-</div>
+    <div class="category drugstore">
+        <h4 data-i18n="map.drugstore">Drugstore</h4>
+        <ul>
+            <li onclick="focusMarker('dm')" data-i18n="map.dm">DM</li>
+            <li onclick="focusMarker('mueller')" data-i18n="map.mueller">Müller</li>
+        </ul>
+    </div>
+
+    <div class="category pharmacy">
+        <h4 data-i18n="map.pharmacy">Pharmacy</h4>
+        <ul>
+            <li onclick="focusMarker('apo')" data-i18n="map.apo">Sonnen Apotheke</li>
+        </ul>
+    </div>
 
 </div>
 

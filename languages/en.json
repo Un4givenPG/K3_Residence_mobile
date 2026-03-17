@@ -136,9 +136,11 @@
     "dm":"DM",
     "apo":"Sonnen Pharmacy",
     "arena":"Bretzenheim Arena",
-    "campusbruecke":"Campus Bridge",
+    "campusbruecke":"Hochschule Mainz / Campusbrücke",
     "kisselberg":"Kisselberg",
-    "sw":"Studierendenwerk"
+    "hsmainz": "Hochschule Mainz",
+    "sw":"Studierendenwerk",
+    "tram": "Tram"
   },
 
 
