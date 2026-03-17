@@ -10,15 +10,6 @@ attribution: '&copy; OpenStreetMap'
 }).addTo(map)
 
 // Colors
-const colors = {
-    k3: "#ff0400",          // Rot
-    service: "#C7D92D",     // dein Grün
-    transport: "#fb8c00",   // Orange
-    groceries: "#43a047",   // Grün (anders als SW)
-    drugstore: "#8e24aa",   // Lila
-    pharmacy: "#1e88e5"     // Blau
-}
-
 const icons = {
     k3: createIcon("red"),
     service: createIcon("green"),
@@ -48,53 +39,53 @@ k3: L.marker(k3, {icon: icons.k3}).addTo(map) .bindPopup("K3"),
 rewe: L.marker([49.99717,8.23097],{icon: icons.groceries}).addTo(map)
 .bindPopup("Rewe"),
 
-kaufland: L.marker([49.966955,8.229197]).addTo(map)
+kaufland: L.marker([49.966955,8.229197],{icon: icons.groceries}).addTo(map)
 .bindPopup("Kaufland"),
 
-aldi: L.marker([49.976431,8.235278]).addTo(map)
+aldi: L.marker([49.976431,8.235278],{icon: icons.groceries}).addTo(map)
 .bindPopup("Aldi"),
 
-lidl: L.marker([49.968123,8.238088]).addTo(map)
+lidl: L.marker([49.968123,8.238088],{icon: icons.groceries}).addTo(map)
 .bindPopup("Lidl"),
 
-mueller: L.marker([49.967566,8.228019]).addTo(map)
+mueller: L.marker([49.967566,8.228019],{icon: icons.drugstore}).addTo(map)
 .bindPopup("Müller"),
 
-dm: L.marker([50.000819,8.265538]).addTo(map)
+dm: L.marker([50.000819,8.265538],{icon: icons.drugstore}).addTo(map)
 .bindPopup("DM"),
 
-apo: L.marker([49.981899,8.244306]).addTo(map)
+apo: L.marker([49.981899,8.244306],{icon: icons.pharmacy}).addTo(map)
 .bindPopup("Sonnen Apotheke"),
 
-arena: L.marker([49.989408,8.223943]).addTo(map)
+arena: L.marker([49.989408,8.223943],{icon: icons.transport}).addTo(map)
 .bindPopup(`
 🚊 Jakob-Heinz-Straße / Arena<br>
 Tram: 51, 53, 59
 `),
 
-campusbruecke: L.marker([49.990060,8.228261]).addTo(map)
+campusbruecke: L.marker([49.990060,8.228261],{icon: icons.transport}).addTo(map)
 .bindPopup(`
 🚌 Hochschule Mainz / Campusbrücke<br>
 Bus: 74, 93, E
 `),
 
-kisselberg: L.marker([49.992112,8.224806]).addTo(map)
+kisselberg: L.marker([49.992112,8.224806],{icon: icons.transport}).addTo(map)
 .bindPopup(`
 🚌🚊 Kisselberg<br>
 Bus: 6, 54, 55, 56, 58, 68, 74, 76, 78, 91, 93, 630<br>
 Tram: 51, 53, 59
 `),
 
-hsmainz: L.marker([49.987411,8.228486]).addTo(map)
+hsmainz: L.marker([49.987411,8.228486],{icon: icons.transport}).addTo(map)
 .bindPopup(`
 🚊 Hochschule Mainz<br>
 Tram: 51, 53, 59
 `),
 
-sw: L.marker([49.992726,8.233475]).addTo(map)
+sw: L.marker([49.992726,8.233475],{icon: icons.service}).addTo(map)
 .bindPopup("Studierendenwerk"),
 
-zm: L.marker([49.991801,8.234076]).addTo(map)
+zm: L.marker([49.991801,8.234076],{icon: icons.service}).addTo(map)
 .bindPopup("Zentralmensa")
 
 }
