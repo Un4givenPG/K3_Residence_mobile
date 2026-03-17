@@ -74,3 +74,15 @@ function loadLanguages() {
         setLanguage(e.target.value);
     });
 }
+
+// ================================
+// INFO POPUP FUNCTIONS
+// ================================
+
+function openInfo(){
+    document.getElementById("infoPopup").style.display = "flex";
+}
+
+function closeInfo(){
+    document.getElementById("infoPopup").style.display = "none";
+}
