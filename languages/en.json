@@ -78,8 +78,35 @@
   },
 
 
-  "HV": {
-    "title": "Dorm Committee (HV)"
+  "hv": {
+    "title": "Dorm Committee (HV)",
+
+    "what": {
+      "title": "What is the HV?",
+      "text1": "The HV (Hausverwaltung) is the resident committee of K3.",
+      "text2": "We represent the interests of the residents and help organize community life."
+    },
+
+    "tasks": {
+      "title": "What we do",
+      "text1": "We organize events, manage communication and support residents.",
+      "text2": "We also take care of projects and improvements within the dorm."
+    },
+
+    "contact": {
+      "title": "Contact",
+      "text": "You can reach us via WhatsApp, Instagram or in person at events."
+    },
+
+    "join": {
+      "title": "Join us",
+      "text": "Everyone is welcome to join the HV and help shape the community."
+    },
+
+    "bar": {
+      "title": "K3 Bar",
+      "text": "The K3 Bar is a central meeting place organized by the HV with regular events."
+    }
   },
 
 
@@ -118,6 +145,31 @@
     }
   },
 
+    "community": {
+    "bar": {
+      "title": "Bar AG",
+      "text1": "The Bar AG organizes events and runs the K3 bar.",
+      "text2": "It is a central place for socializing and parties."
+    },
+
+    "garden": {
+      "title": "Garden AG",
+      "text1": "The Garden AG takes care of the outdoor areas.",
+      "text2": "They maintain plants and improve the environment."
+    },
+
+    "games": {
+      "title": "Games AG",
+      "text1": "The Games AG organizes game nights and activities.",
+      "text2": "Everyone is welcome to join and participate."
+    },
+
+    "tt": {
+      "title": "Table Tennis AG",
+      "text1": "The Table Tennis AG manages the tables and organizes matches.",
+      "text2": "Players of all skill levels are welcome."
+    }
+  },
 
   "map":{
     "title":"Map",
@@ -141,11 +193,5 @@
     "hsmainz": "Hochschule Mainz",
     "sw":"Studierendenwerk",
     "zm": "Central Cafeteria"
-  },
-
-
-  "community": {
-    "title": "K3 Community"
   }
-
 }

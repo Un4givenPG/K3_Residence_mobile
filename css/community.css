@@ -1,0 +1,124 @@
+/* =========================
+   COMMUNITY ACCORDION
+   ========================= */
+
+.hv-accordion{
+    max-width:1100px;
+    margin:40px auto;
+    padding:0 40px;
+}
+
+
+/* =========================
+   ACCORDION ITEM
+   ========================= */
+
+.hv-accordion details{
+    background:white;
+    border-radius:6px;
+    border:1px solid #ddd;
+    padding:20px;
+    margin-bottom:15px;
+
+    transition:all 0.2s ease;
+}
+
+.hv-accordion details:hover{
+    box-shadow:0 4px 10px rgba(0,0,0,0.06);
+}
+
+
+/* =========================
+   SUMMARY (CLICK AREA)
+   ========================= */
+
+.hv-accordion summary{
+    cursor:pointer;
+    font-size:20px;
+    font-weight:600;
+    color:#154995;
+
+    list-style:none;
+}
+
+/* Remove default arrow */
+.hv-accordion summary::-webkit-details-marker{
+    display:none;
+}
+
+/* Custom arrow */
+
+.hv-accordion summary::after{
+    content:"▼";
+    float:right;
+    transition:transform 0.2s ease;
+}
+
+.hv-accordion details[open] summary::after{
+    transform:rotate(180deg);
+}
+
+/* Hover effect */
+
+.hv-accordion summary:hover{
+    color:#C7D92D;
+}
+
+
+/* =========================
+   CONTENT LAYOUT
+   ========================= */
+
+.accordion-content{
+    margin-top:20px;
+
+    display:flex;
+    gap:30px;
+    align-items:center;
+}
+
+
+/* =========================
+   TEXT
+   ========================= */
+
+.accordion-text{
+    flex:1;
+    line-height:1.6;
+}
+
+
+/* =========================
+   IMAGE
+   ========================= */
+
+.accordion-image{
+    flex:1;
+}
+
+.accordion-image img{
+    width:100%;
+    border-radius:6px;
+    object-fit:cover;
+}
+
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media(max-width:800px){
+
+    .hv-accordion{
+        padding:0 20px;
+    }
+
+    .accordion-content{
+        flex-direction:column;
+        gap:20px;
+    }
+
+    .accordion-image img{
+        max-height:250px;
+    }
+}

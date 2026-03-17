@@ -78,10 +78,62 @@
   },
 
 
-  "HV": {
-    "title": "Hausverwaltung (HV)"
+  "hv": {
+    "title": "Hausverwaltung (HV)",
+
+    "what": {
+      "title": "Was ist die HV?",
+      "text1": "Die HV ist die Hausvertretung des Wohnheims K3.",
+      "text2": "Wir vertreten die Interessen der Bewohner und fördern das Gemeinschaftsleben."
+    },
+
+    "tasks": {
+      "title": "Was wir machen",
+      "text1": "Wir organisieren Veranstaltungen, kümmern uns um Kommunikation und helfen Bewohnern.",
+      "text2": "Außerdem betreuen wir Projekte und Verbesserungen im Wohnheim."
+    },
+
+    "contact": {
+      "title": "Kontakt",
+      "text": "Du erreichst uns über WhatsApp, Instagram oder persönlich bei Veranstaltungen."
+    },
+
+    "join": {
+      "title": "Mitmachen",
+      "text": "Jeder kann bei der HV mitmachen und das Wohnheim aktiv mitgestalten."
+    },
+
+    "bar": {
+      "title": "K3 Bar",
+      "text": "Die K3 Bar ist ein zentraler Treffpunkt und wird von der HV organisiert."
+    }
   },
 
+    "community": {
+    "bar": {
+      "title": "Bar AG",
+      "text1": "Die Bar AG organisiert Events und betreibt die K3 Bar.",
+      "text2": "Sie ist ein zentraler Ort für Treffen und Partys."
+    },
+
+    "garden": {
+      "title": "Garten AG",
+      "text1": "Die Garten AG kümmert sich um die Außenanlagen.",
+      "text2": "Sie pflegt Pflanzen und verbessert die Umgebung."
+    },
+
+    "games": {
+      "title": "Spiele AG",
+      "text1": "Die Spiele AG organisiert Spieleabende und Aktivitäten.",
+      "text2": "Jeder kann mitmachen und teilnehmen."
+    },
+
+    "tt": {
+      "title": "Tischtennis AG",
+      "text1": "Die Tischtennis AG verwaltet die Platten und organisiert Spiele.",
+      "text2": "Spieler aller Level sind willkommen."
+    }
+  },
 
   "links": {
 
@@ -142,10 +194,5 @@
     "hsmainz": "Hochschule Mainz",
     "sw":"Studierendenwerk",
     "zm": "Zentralmensa"
-  },
-
-
-  "community": {
-    "title": "K3 Gemeinschaft"
   }
 }

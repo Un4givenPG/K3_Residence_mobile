@@ -1,0 +1,81 @@
+/* =========================
+   HV SECTION LAYOUT
+   ========================= */
+
+.hv-section{
+max-width:1100px;
+margin:40px auto;
+padding:40px;
+
+display:flex;
+align-items:center;
+gap:40px;
+
+background:white;
+border-radius:6px;
+box-shadow:0 2px 5px rgba(0,0,0,0.05);
+}
+.hv-section:hover{
+    transform:translateY(-3px);
+    box-shadow:0 6px 14px rgba(0,0,0,0.08);
+}
+
+/* ALTERNATE LAYOUT */
+
+.hv-section.reverse{
+flex-direction:row-reverse;
+}
+
+/* TEXT */
+
+.hv-text{
+flex:1;
+}
+
+.hv-text h2{
+margin-bottom:15px;
+color:#154995;
+}
+
+.hv-text p{
+margin-bottom:10px;
+line-height:1.5;
+}
+
+/* IMAGE */
+
+.hv-image{
+flex:1;
+}
+
+.hv-image img{
+width:100%;
+height:100%;
+object-fit:cover;
+border-radius:6px;
+}
+
+/* OPTIONAL: nicer spacing between sections */
+
+.hv-section + .hv-section{
+margin-top:20px;
+}
+
+/* MOBILE */
+
+@media (max-width:800px){
+
+.hv-section{
+flex-direction:column;
+padding:20px;
+}
+
+.hv-section.reverse{
+flex-direction:column;
+}
+
+.hv-image img{
+height:auto;
+}
+
+}
