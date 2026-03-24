@@ -35,17 +35,19 @@
 
     "repairs": {
       "title": "Repairs & Maintenance",
-      "text": "Report any issues through the Tenant Portal, where you can also track repair progress.",
-      "text2": "If your door lock flashes orange, the battery is running low. Please report it.",
+      "text": "Report any issues through the Tenant Portal and track the repair progress. Most fixes are free unless you caused major damage.",
+      "text2": "If your door lock flashes red and yellow at the same time (orange), the battery is running low. Please report it.",
       "emergency_service": "Emergency service: +49 6131 392 4568 ",
       "esp1": "For urgent problems outside caretaker hours",
       "esp2": "No charge if it’s a technical fault",
-      "esp3": "Costs apply if the lockout was caused by the resident (e.g., lost key)",
+      "esp3": "Costs apply if the lockout was caused by the resident (e.g., lost key | 150€ SoSe 26)",
       "link": "Tenant Portal"
     },
 
     "service": {
-      "title": "Laundry & Waste",
+      "title": "Life in K3: The Basics",
+      "smoke": "Smoke detectors must not be manipulated by tenants (150€ penalty)",
+      "windows": "Windows and balcony doors can not be opened in tilt position",
       "laundry": "The laundry room is in House 4 (payment via the Studierendenwerk app).",
       "trash": "Trash and recycling areas are located near House 4 and House 18.",
       "link": "Housing Brochure (PDF)"
@@ -55,7 +57,8 @@
       "title": "Parking",
       "text": "Resident parking is available on Lucy-Hillebrand-Straße.",
       "text2": "If no spaces are available, you can use parking on the university Mainz garage.",
-      "bike": "There is a locked bike storage area where you can safely park your bicycle."
+      "bike": "There is a locked bike storage area where you can safely park your bicycle.",
+      "games": "Access roads are closed during football matches."
     },
 
     "HV": {
@@ -132,8 +135,8 @@
 
     "contact": {
       "title": "How to contact us?",
-      "text": "You can reach us::",
-      "esp1": "during our weekly meetings (tuesdays 8:30 pm)",
+      "text": "You can reach us:",
+      "esp1": "during our weekly meetings (tuesdays 8:30 pm at the bar)",
       "esp2": "by Mail: hvk3@uni-mainz.de",
       "esp3": "in the K3 WhatsApp group",
       "esp4": "on Instagram"

@@ -35,17 +35,19 @@
 
     "repairs": {
       "title": "Reparaturen & Instandhaltung",
-      "text": "Alle Probleme müssen über das Mieterportal gemeldet. Dort wird auch der Fortschritt der Reparaturen angezeigt.",
-      "text2": "Wenn ein Türschloss orange blinkt, ist die Batterie fast leer. Bitte direkt melden.",
+      "text": "Alle Probleme müssen über das Mieterportal gemeldet. Dort wird auch der Fortschritt der Reparaturen angezeigt. Die Reparaturen sind kostenlos solange man sie nicht groß und selbst verursacht sind.",
+      "text2": "Wenn ein Türschloss rot und gelb (orange) zeitgleich blinkt, ist die Batterie fast leer. Bitte direkt melden.",
       "emergency_service": "Notdienst: +49 6131 392 4568",
       "esp1": "Bei dringenden Problemen außerhalb der Hausmeisterzeiten",
       "esp2": "Kostenlos bei technischen Störungen",
-      "esp3": "Es fallen Kosten an, wenn die Aussperrung selbstverursacht wurde (z. B. verlorener Schlüssel)",
+      "esp3": "Es fallen Kosten an, wenn die Aussperrung selbstverursacht wurde (z. B. verlorener Schlüssel | 150€ stand SoSe 26)",
       "link": "Mieterportal"
     },
 
     "service": {
-      "title": "Wäsche & Müll",
+      "title": "Leben in K3: Die Basics",
+      "smoke": "Die Rauchmelder dürfen nicht manipuliert oder abgenommen werden (150€ Strafe).",
+      "windows": "Fenster und Balkontüren können nicht gekippt geöffnet werden.",
       "laundry": "Der Waschraum befindet sich in Haus 4 (Bezahlung über die Studierendenwerk-App).",
       "trash": "Die Müll- und Recyclingstellen befinden sich in der Nähe von Haus 4 und Haus 18.",
       "link": "Wohnheimbroschüre (PDF)"
@@ -55,7 +57,8 @@
       "title": "Parken",
       "text": "In der Lucy-Hillebrand-Straße stehen Anwohnerparkplätze zur Verfügung.",
       "text2": "Sollten keine Parkplätze frei sein, kann man das Parkhaus der Hochschule Mainz nutzen.",
-      "bike": "Es gibt Fahrradkäfige, wo Sie Ihr Fahrrad sicher abstellen können."
+      "bike": "Es gibt Fahrradkäfige, wo Sie Ihr Fahrrad sicher abstellen können.",
+      "games": "Die Zufahrtsstraßen sind während der Fußballspiele gesperrt."
     },
 
     "HV": {
@@ -133,7 +136,7 @@
     "contact": {
       "title": "Wie kann man uns erreichen?",
       "text": "Du erreichst uns:",
-      "esp1": "bei unseren wöchentlichen Treffen (dienstags um 20:30 Uhr)",
+      "esp1": "bei unseren wöchentlichen Treffen (dienstags um 20:30 Uhr in der Bar)",
       "esp2": "per Mail: hvk3@uni-mainz.de",
       "esp3": "über die K3-WhatsApp-Gruppe",
       "esp4": "über Instagram"
