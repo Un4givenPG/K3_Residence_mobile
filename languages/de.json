@@ -4,6 +4,7 @@
     "links": "Links",
     "community": "Community",
     "map": "Karte",
+    "moving": "Ein-/Auszug",
     "info-title":"Information",
     "info-content":"Diese Website wurde von der Hausverwaltung (HV) von K3 erstellt und ist kein offizieller Dienst des Studentenwerks Mainz."
   },
@@ -79,6 +80,12 @@
       "mail": "E-Mail: nag-k3@uni-mainz.de"
     }
   },
+
+
+  "moving":{
+    "title": "Umzugsleitfaden"
+  },
+
 
 
   "hv": {

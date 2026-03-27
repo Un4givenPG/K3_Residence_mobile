@@ -4,6 +4,7 @@
     "links": "Links",
     "community": "Community",
     "map": "Map",
+    "moving": "Moving",
     "info-title":"Information",
     "info-content":"This website was created by the dorm commitee (HV) of K3 and is not an official service of Studierendenwerk Mainz."
   },
@@ -78,6 +79,11 @@
       "office": "Office: House 6",
       "mail": "E-Mail: nag-k3@uni-mainz.de"
     }
+  },
+
+
+  "moving":{
+    "title":"Moving Guide"
   },
 
 
