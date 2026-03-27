@@ -68,6 +68,56 @@ object-fit:contain;
 border-radius:6px;
 }
 
+.hv-image a {
+  position: relative;
+  display: block;
+}
+
+.hv-image a::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+
+  background: rgba(0,0,0,0.75);
+  color: white;
+  padding: 6px 10px;
+  font-size: 12px;
+  border-radius: 4px;
+
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.hv-image a:hover::after {
+  opacity: 1;
+}
+
+.hv-image-nc a {
+  position: relative;
+  display: block;
+}
+
+.hv-image-nc a::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+
+  background: rgba(0,0,0,0.75);
+  color: white;
+  padding: 6px 10px;
+  font-size: 12px;
+  border-radius: 4px;
+
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.hv-image-nc a:hover::after {
+  opacity: 1;
+}
+
 /* OPTIONAL: nicer spacing between sections */
 
 .hv-section + .hv-section{

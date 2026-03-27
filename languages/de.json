@@ -234,5 +234,32 @@
     "zm": "Zentralmensa",
     "hsm": "Mensa Hochschule Mainz",
     "mail": "Briefkasten der Post"
+  },
+
+  "images": {
+    "K3_Logo": {
+      "alt": "Logo des Wohnheims K3",
+      "title": "K3 Wohnheim Logo"
+    },
+    "commonroom": {
+      "alt": "Gemeinschaftsraum im Wohnheim K3 mit Sitzgelegenheiten und Barbereich",
+      "title": "Bild vom Studierendenwerk Mainz: Gemeinschaftsraum K3 (zur Website)"
+    },
+    "join": {
+      "alt": "Außenansicht der Bar (generiertes Bild)",
+      "title": "Außenansicht der Bar (generiertes Bild)"
+    },
+    "building": {
+      "alt": "Gesamtansicht des Wohnheims K3 von außen",
+      "title": "Bild vom Studierendenwerk Mainz: Wohnheim K3 – Außenansicht (zur Website)"
+    },
+    "bar": {
+      "alt": "Grafische Darstellung der K3 Bar als Treffpunkt für Studierende",
+      "title": "K3 Bar – Treffpunkt im Wohnheim"
+    },
+    "graffiti": {
+      "alt": "Graffiti im Wohnheim K3, gestaltet von Bewohnerinnen und Bewohnern",
+      "title": "K3 Graffiti – kreative Gestaltung im Wohnheim"
+    }
   }
 }

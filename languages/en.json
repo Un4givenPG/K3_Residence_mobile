@@ -233,5 +233,32 @@
     "zm": "Central Cafeteria",
     "hsm": "Cafeteria Hochschule Mainz",
     "mail": "Post Office Mailbox"
+  },
+
+"images": {
+  "K3_Logo": {
+    "alt": "Logo of the K3 dormitory",
+    "title": "K3 dormitory logo"
+    },
+  "commonroom": {
+    "alt": "Common room in the K3 dormitory with seating area and bar",
+    "title": "Image by Studierendenwerk Mainz: K3 common room (klick for website)"
+    },
+  "join": {
+    "alt": "Exterior view of the bar  (generated image)",
+    "title": "Exterior view of the bar  (generated image)"
+    },
+  "building": {
+    "alt": "Exterior view of the K3 dormitory building",
+    "title": "Image by Studierendenwerk Mainz: K3 dormitory – exterior view (klick for website)"
+    },
+  "bar": {
+    "alt": "Graphic illustration of the K3 bar as a meeting place for students",
+    "title": "K3 bar – social hub in the dormitory"
+    },
+  "graffiti": {
+    "alt": "Graffiti inside the K3 dormitory created by residents",
+    "title": "K3 graffiti – creative expression in the dormitory"
+    } 
   }
 }
