@@ -17,7 +17,6 @@ async function loadLanguage(lang){
 function applyTranslations(){
 
     document.querySelectorAll("[data-i18n]").forEach(el=>{
-
         const keys = el.dataset.i18n.split(".")
         let text = translations
         keys.forEach(k => text = text[k])
@@ -25,6 +24,32 @@ function applyTranslations(){
         if(text) el.textContent = text
     })
 
+    // ✅ ALT Texte
+    document.querySelectorAll("[data-i18n-alt]").forEach(el=>{
+        const keys = el.dataset.i18nAlt.split(".")
+        let text = translations
+        keys.forEach(k => text = text[k])
+        
+        if(text) el.alt = text
+    })
+
+    // ✅ TITLE (Hover)
+    document.querySelectorAll("[data-i18n-title]").forEach(el=>{
+        const keys = el.dataset.i18nTitle.split(".")
+        let text = translations
+        keys.forEach(k => text = text[k])
+        
+        if(text) el.title = text
+    })
+
+    // ✅ CUSTOM TOOLTIP (für CSS)
+    document.querySelectorAll("[data-i18n-tooltip]").forEach(el=>{
+        const keys = el.dataset.i18nTooltip.split(".")
+        let text = translations
+        keys.forEach(k => text = text[k])
+        
+        if(text) el.setAttribute("data-tooltip", text)
+    })
 }
 
 function setLanguage(lang){

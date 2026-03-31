@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+    <head>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/moving.css">
+        <link rel="stylesheet" href="css/navbar.css">
+    </head>
+
+    <body>
+
+        <div id="navbar-container"></div>
+
+        <script src="javaScript/lan.js"></script>
+        <script src="javaScript/loadNavbar.js"></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+                loadNavbar()
+            })
+        </script>
+
+        <main>
+            <section class="title-bar">
+                <h1 data-i18n="moving.title">Moving</h1>
+            </section>
+        </main>
+
+        <div class="move-accordion">
+
+            <!-- EINZUG -->
+            <details>
+                <summary>Move In</summary>
+
+                <div class="move-content">
+
+                    <div class="move-text">
+                        <h3>Information</h3>
+                        <ul>
+                            <li>Check your room for damages</li>
+                            <li>Register at the city (Anmeldung)</li>
+                            <li>Set up internet (NAG)</li>
+                        </ul>
+                    </div>
+
+                    <div class="move-image">
+                        <img src="images/K3_complete.jpg" alt="">
+                    </div>
+
+                </div>
+
+                <div class="move-links">
+                    <a href="#" class="link-item">Tenant Portal</a>
+                    <a href="#" class="link-item">Studierendenwerk Info</a>
+                </div>
+
+            </details>
+
+
+            <!-- AUSZUG -->
+            <details>
+                <summary>Move Out</summary>
+
+                <div class="move-content">
+
+                    <div class="move-text">
+                        <h3>Information</h3>
+                        <ul>
+                            <li>Clean your room properly</li>
+                            <li>Return keys</li>
+                            <li>Remove personal furniture</li>
+                        </ul>
+                    </div>
+
+                    <div class="move-image">
+                        <img src="images/old_bar.jpg" alt="">
+                    </div>
+
+                </div>
+
+                <div class="move-links">
+                    <a href="#" class="link-item">Checklist PDF</a>
+                    <a href="#" class="link-item">Contact Studierendenwerk</a>
+                </div>
+
+            </details>
+
+        </div>
+    </body>
+
+</html>
