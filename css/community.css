@@ -76,6 +76,7 @@
     display:flex;
     gap:30px;
     align-items:center;
+    justify-content:space-between;
 }
 
 
@@ -84,7 +85,7 @@
    ========================= */
 
 .accordion-text{
-    flex:1;
+    flex: 1 1 55%;
     line-height:1.6;
 }
 
@@ -94,13 +95,39 @@
    ========================= */
 
 .accordion-image{
-    flex:1;
+    flex: 1 1 45%;
 }
 
 .accordion-image img{
     width:100%;
-    border-radius:6px;
+    height:100%;
+    max-height: 300px;
     object-fit:cover;
+    border-radius:6px;
+}
+.accordion-image a {
+  position: relative;
+  display: block;
+}
+
+.accordion-image a::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+
+  background: rgba(0,0,0,0.75);
+  color: white;
+  padding: 6px 10px;
+  font-size: 12px;
+  border-radius: 4px;
+
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.accordion-image a:hover::after {
+  opacity: 1;
 }
 
 

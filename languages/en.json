@@ -202,17 +202,15 @@
       "text2": "They maintain plants and improve the environment."
     },
 
-    "games": {
-      "title": "Games AG",
-      "text1": "The Games AG organizes game nights and activities.",
-      "text2": "Everyone is welcome to join and participate."
-    },
-
-    "tt": {
-      "title": "Table Tennis AG",
-      "text1": "The Table Tennis AG manages the tables and organizes matches.",
-      "text2": "Players of all skill levels are welcome."
+    "new": {
+      "title": "Start Your Own AG",
+      "text": "Didn’t find an activity group that suits you? Why not start your own! If you have an idea, simply contact the HV and discuss it with them. You’ll receive support to bring your project to life and create your own group.",
+      "esp1": "open to everyone",
+      "esp2": "supported by the HV and the Studierendenwerk",
+      "esp3": "a relaxed way to get involved and meet new people",
+      "esp4": "counts as a voluntary activity and can help extend your stay"
     }
+
   },
 
   "map":{
