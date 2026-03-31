@@ -3,17 +3,17 @@
    ========================= */
 
 .hv-section{
-max-width:1100px;
-margin:40px auto;
-padding:40px;
+  max-width:1100px;
+  margin:40px auto;
+  padding:40px;
 
-display:flex;
-align-items:center;
-gap:40px;
+  display:flex;
+  align-items:center;
+  gap:40px;
 
-background:white;
-border-radius:6px;
-box-shadow:0 2px 5px rgba(0,0,0,0.05);
+  background:white;
+  border-radius:6px;
+  box-shadow:0 2px 5px rgba(0,0,0,0.05);
 }
 .hv-section:hover{
     transform:translateY(-3px);
@@ -29,23 +29,23 @@ flex-direction:row-reverse;
 /* TEXT */
 
 .hv-text{
-flex:1;
+  flex:1; 
 }
 
 .hv-text h2{
-margin-bottom:15px;
-color:#154995;
+  margin-bottom:15px;
+  color:#154995;
 }
 
 .hv-text p{
-margin-bottom:10px;
-line-height:1.5;
+  margin-bottom:10px;
+  line-height:1.5;
 }
 
 /* IMAGE */
 
 .hv-image{
-flex:1;
+  flex:1;
 }
 
 .hv-image img{
