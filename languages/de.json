@@ -163,16 +163,13 @@
       "text2": "Sie pflegt Pflanzen und verbessert die Umgebung."
     },
 
-    "games": {
-      "title": "Spiele AG",
-      "text1": "Die Spiele AG organisiert Spieleabende und Aktivitäten.",
-      "text2": "Jeder kann mitmachen und teilnehmen."
-    },
-
-    "tt": {
-      "title": "Tischtennis AG",
-      "text1": "Die Tischtennis AG verwaltet die Platten und organisiert Spiele.",
-      "text2": "Spieler aller Level sind willkommen."
+    "new": {
+      "title": "Gründe deine eigene AG",
+      "text": "Keine passende AG gefunden? Dann gründe doch einfach deine eigene! Wenn du eine Idee hast, kontaktiere die HV und sprich sie gemeinsam durch. Du erhältst Unterstützung bei der Umsetzung und kannst deine eigene Gruppe ins Leben rufen.",
+      "esp1": "offen für alle",
+      "esp2": "Unterstützung durch die HV und das Studierendenwerk",
+      "esp3": "eine entspannte Möglichkeit, dich einzubringen und neue Leute kennenzulernen",
+      "esp4": "gilt als ehrenamtliche Tätigkeit und kann u. a. helfen, deine Wohndauer zu verlängern"
     }
   },
 
