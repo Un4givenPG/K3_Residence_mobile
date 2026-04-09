@@ -1,12 +1,21 @@
+*{
+box-sizing:border-box;
+}
+
+html{
+font-size:16px;
+}
+
 body{
 font-family: Arial, Helvetica, sans-serif;
 margin:0;
 background:#f8f8f8;
 color:#333;
+overflow-x:hidden;
 }
 
 main{
-margin-top:160px;
+margin-top:140px;
 }
 
 h2{
@@ -26,7 +35,6 @@ position:fixed;
 top:60px;   /* height Navbar */
 left: 0;
 right: 0;
-width: flex;
 
 background:#154995;
 color:white;
@@ -49,6 +57,7 @@ font-size:28px;
 max-width:1100px;
 margin:auto;
 padding:40px;
+width:min(100%, 1100px);
 
 }
 
@@ -101,15 +110,58 @@ margin-bottom:6px;
 margin-top:6px;
 }
 
+img{
+max-width:100%;
+height:auto;
+}
+
 /*Phone*/
+@media (max-width:860px){
+
+main{
+    margin-top:132px;
+}
+
+.title-bar{
+    top:72px;
+    padding:20px 20px;
+}
+
+.title-bar h1{
+    font-size:24px;
+}
+
+.content{
+    padding:24px 16px;
+}
+}
+
 @media (max-width:700px){
+
+main{
+    margin-top:124px;
+}
 
 .info-grid{
     grid-template-columns:1fr;
+    gap:16px;
 }
 
 .card{
     width:100%;
+    padding:18px 16px;
+}
+
+.card:hover{
+    transform:none;
+}
+
+.card h3{
+    font-size:1.1rem;
+}
+
+.link-item{
+    padding:16px;
 }
 
 }

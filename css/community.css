@@ -6,6 +6,7 @@
     max-width:1100px;
     margin:40px auto;
     padding:0 40px;
+    width:min(100%, 1100px);
 }
 
 
@@ -138,12 +139,22 @@
 @media(max-width:800px){
 
     .hv-accordion{
-        padding:0 20px;
+        margin:24px auto;
+        padding:0 16px;
     }
 
     .accordion-content{
         flex-direction:column;
         gap:20px;
+        align-items:stretch;
+    }
+
+    .hv-accordion details{
+        padding:16px;
+    }
+
+    .hv-accordion summary{
+        font-size:18px;
     }
 
     .accordion-image img{

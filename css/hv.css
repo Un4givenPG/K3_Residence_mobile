@@ -6,6 +6,7 @@
   max-width:1100px;
   margin:40px auto;
   padding:40px;
+  width:min(100% - 32px, 1100px);
 
   display:flex;
   align-items:center;
@@ -54,6 +55,11 @@ height:100%;
 max-height: 300px;
 object-fit:cover;
 border-radius:6px;
+}
+
+.hv-image figure,
+.hv-image-nc figure{
+margin:0;
 }
 
 .hv-image-nc{
@@ -130,7 +136,10 @@ margin-top:20px;
 
 .hv-section{
 flex-direction:column;
-padding:20px;
+padding:20px 16px;
+margin:24px auto;
+gap:20px;
+width:calc(100% - 32px);
 }
 
 .hv-section.reverse{
@@ -143,6 +152,14 @@ height:auto;
 
 .hv-image-nc img{
 height:auto;
+}
+
+.hv-text{
+width:100%;
+}
+
+.hv-text h2{
+font-size:1.25rem;
 }
 
 }

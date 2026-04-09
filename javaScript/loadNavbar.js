@@ -19,6 +19,9 @@ async function loadNavbar() {
         // Highlight the active page link in the navbar
         setActiveLink();
 
+        // Initialize the mobile navigation toggle
+        initMobileNav();
+
         // Populate the language select dropdown and attach listeners
         loadLanguages();
 
@@ -72,6 +75,37 @@ function loadLanguages() {
     // Add a listener to switch language when the user selects a different option
     select.addEventListener("change", e => {
         setLanguage(e.target.value);
+    });
+}
+
+function initMobileNav() {
+    const toggle = document.querySelector(".nav-toggle");
+    const navLinks = document.querySelector(".nav-links");
+
+    if (!toggle || !navLinks) {
+        return;
+    }
+
+    toggle.addEventListener("click", () => {
+        const isOpen = navLinks.classList.toggle("nav-open");
+        toggle.classList.toggle("is-open", isOpen);
+        toggle.setAttribute("aria-expanded", String(isOpen));
+    });
+
+    navLinks.querySelectorAll("a").forEach(link => {
+        link.addEventListener("click", () => {
+            navLinks.classList.remove("nav-open");
+            toggle.classList.remove("is-open");
+            toggle.setAttribute("aria-expanded", "false");
+        });
+    });
+
+    window.addEventListener("resize", () => {
+        if (window.innerWidth > 860) {
+            navLinks.classList.remove("nav-open");
+            toggle.classList.remove("is-open");
+            toggle.setAttribute("aria-expanded", "false");
+        }
     });
 }
 

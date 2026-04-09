@@ -6,6 +6,7 @@
     max-width:1100px;
     margin:40px auto;
     padding:0 40px;
+    width:min(100%, 1100px);
 }
 
 /* ITEM */
@@ -110,12 +111,22 @@
 @media(max-width:800px){
 
     .move-accordion{
-        padding:0 20px;
+        margin:24px auto;
+        padding:0 16px;
     }
 
     .move-content{
         flex-direction:column;
         gap:20px;
+        align-items:stretch;
+    }
+
+    .move-accordion details{
+        padding:16px;
+    }
+
+    .move-accordion summary{
+        font-size:18px;
     }
 
     .move-image img{
